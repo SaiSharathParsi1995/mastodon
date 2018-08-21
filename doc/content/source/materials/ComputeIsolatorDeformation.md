@@ -1,19 +1,17 @@
-<!-- MOOSE Documentation Stub: Remove this when content is added. -->
-
 # ComputeIsolatorDeformation
 
-!alert construction title=Undocumented Class
-The ComputeIsolatorDeformation has not been documented, if you would like to contribute to MOOSE by
-writing documentation, please see [/generate.md]. The content contained on this page explains
-the typical documentation associated with a MooseObject; however, what is contained is ultimately
-determined by what is necessary to make the documentation clear for users.
-
 !syntax description /Materials/ComputeIsolatorDeformation
+
+## Description
+
+This material class calculates the deformation matrix of two-noded isolator
+elements and should be defined for each isolator element. Further information
+regarding modeling the isolator elements is provided in the
+[LR Isolator](source/materials/ComputeLRIsolatorElasticity.md) page.
+The syntax and input parameters for this class are described below.
 
 !syntax parameters /Materials/ComputeIsolatorDeformation
 
 !syntax inputs /Materials/ComputeIsolatorDeformation
 
 !syntax children /Materials/ComputeIsolatorDeformation
-
-!bibtex bibliography

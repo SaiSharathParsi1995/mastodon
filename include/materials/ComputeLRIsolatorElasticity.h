@@ -20,7 +20,7 @@
 
 /**
  * ComputeLRIsolatorElasticity calculates the forces and stiffness matrix
- * of an isolator element.
+ * of an LR isolator element.
  */
 
 // Forward Declarations

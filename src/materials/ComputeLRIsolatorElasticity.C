@@ -19,7 +19,7 @@ InputParameters
 validParams<ComputeLRIsolatorElasticity>()
 {
   InputParameters params = validParams<Material>();
-  params.addClassDescription("Compute the forces and the stiffness matric corresponding to a two-noded isolator element.");
+  params.addClassDescription("Compute the forces and the stiffness matrix for an LR isolator element.");
   // Switches
   params.addParam<bool>("cavitation", false, "Switch for modeling cavitation and post-cavitation.");
   params.addParam<bool>("buckling_load_variation", false, "Switch for modeling buckling load variation during the analysis.");
@@ -46,7 +46,6 @@ validParams<ComputeLRIsolatorElasticity>()
   params.addParam<Real>("kc", 10.0, "Cavitation parameter.");
   params.addParam<Real>("phi_m", 0.5, "Damage index.");
   params.addParam<Real>("ac", 1.0, "Strength degradation parameter.");
-  // params.addRequiredParam<Real>("mass", "Bearing mass.");
   params.addParam<Real>("cd", 0.0, "Viscous damping parameter.");
   params.set<MooseEnum>("constant_on") = "ELEMENT"; // _qp = 0
   return params;
